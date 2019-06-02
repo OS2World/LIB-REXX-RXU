@@ -1,0 +1,3 @@
+The two programs TESTBN1.CMD and TESTBN2.CMD illustrate how the "RxPassByName()" functions
+might be used to pass variables by name among separate Rexx program files.
+

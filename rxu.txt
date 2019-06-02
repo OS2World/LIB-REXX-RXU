@@ -1,0 +1,17 @@
+RXU version 1.9
+1995-11-20 - Release date
+2019-06-02 - Open Source
+License: BSD 3-Clauses.
+
+RXU is a rich set of Rexx functions which expose most of the OS/2 API set to
+Rexx programs (memory management/access, semaphores, pipes, queues, module handling,
+threading/tasking, system information, i/o, devioctl, etc.), as well as providing
+many functions which aid in Rexx programming (variable pool access, "expose" variables
+across external function calls, queue manipulation, macrospace management, etc.).
+
+Package includes .INF file and sample Rexx programs and the source code.
+
+rxusmp : RXU samples in C and Rexx
+
+source : RXU library source code. 
+

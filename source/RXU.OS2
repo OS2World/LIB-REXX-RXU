@@ -1,0 +1,12 @@
+rxu.dll:  \
+  rxu.OBJ \
+  rxu.def \
+  rxu.os2
+  ilink /free rxu.obj cppom30.lib rexx.lib rxu.def /out:rxu.dll
+  IMPLIB rxu.LIB rxu.def
+  mapsym rxu.map
+
+rxu.obj: \
+   rxu.c
+   ICC.EXE -Ss -Sm -Q -I.;\dboll\include;d:\muglib -O -Gm+ -Ge- -Gd- -Gt -C .\rxu.c
+

@@ -1,0 +1,12 @@
+rxuw32.dll:  \
+  rxuw32.OBJ \
+  rxu.w32
+  ilink /free /dll rxuw32.obj cppwm35.lib rexxapi.lib rexx.lib /out:rxuw32.dll /de
+
+#  IMPLIB rxuw32.LIB rxuw32.def
+#  mapsym rxuw32.map
+
+rxuw32.obj: \
+   rxu.c
+   ICC.EXE -Ss -Sm -Q -D__W32OREXX__ -I.;d:\muglib -Ti -Gm+ -Ge- -Gd- -Forxuw32 -C .\rxu.c
+

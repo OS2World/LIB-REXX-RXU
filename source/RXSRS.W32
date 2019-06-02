@@ -1,0 +1,7 @@
+rxsrs.exe: rxsrs.OBJ \
+           rxsrs.MAK
+  ilink /free rxsrs.obj cppwm35.lib rexx.lib /out:rxsrs.exe
+
+rxsrs.obj:
+   ICC.EXE /Ss /I. /O /Ge+ /C .\rxsrs.c
+
